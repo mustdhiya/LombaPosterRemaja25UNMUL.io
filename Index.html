@@ -1,278 +1,880 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" dir="ltr" data-theme="light">
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenHealth 7.0: Generasi Digital, Solusi Sehat Global</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO & Competition Optimization -->
+    <title>GenHealth 7.0: Generasi Digital, Solusi Sehat Global | Pekan Ilmiah Remaja 2025</title>
+    <meta name="description" content="Poster inovatif GenHealth 7.0 menampilkan bagaimana generasi muda Indonesia memimpin transformasi kesehatan digital di era Society 7.0. Telemedicine, AI diagnostics, dan teknologi wearable untuk masa depan kesehatan global.">
+    <meta name="keywords" content="GenHealth 7.0, Society 7.0, kesehatan digital Indonesia, telemedicine, AI diagnostics, generasi muda, Pekan Ilmiah Remaja 2025, inovasi kesehatan">
+    <meta name="author" content="Tim GenHealth 7.0 - Pekan Ilmiah Remaja 2025">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://genhealth70.com">
+    <meta property="og:title" content="GenHealth 7.0: Generasi Digital, Solusi Sehat Global">
+    <meta property="og:description" content="Generasi muda Indonesia memimpin revolusi kesehatan digital di era Society 7.0">
+    <meta property="og:image" content="https://genhealth70.com/og-image.jpg">
+    <meta property="og:site_name" content="GenHealth 7.0">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://genhealth70.com">
+    <meta name="twitter:title" content="GenHealth 7.0: Generasi Digital, Solusi Sehat Global">
+    <meta name="twitter:description" content="Generasi muda Indonesia memimpin revolusi kesehatan digital di era Society 7.0">
+    <meta name="twitter:image" content="https://genhealth70.com/og-image.jpg">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    <link rel="shortcut icon" href="logo.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preload" href="logo.png" as="image">
+    
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="//pplx-res.cloudinary.com">
+    <link rel="dns-prefetch" href="//i0.wp.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts Optimization -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "GenHealth 7.0: Generasi Digital, Solusi Sehat Global",
+      "description": "Poster inovatif tentang peran generasi muda Indonesia dalam transformasi kesehatan digital",
+      "creator": {
+        "@type": "Organization",
+        "name": "Tim GenHealth 7.0",
+        "description": "Pekan Ilmiah Remaja 2025"
+      },
+      "about": [
+        "Society 7.0",
+        "Digital Health",
+        "Indonesian Youth Innovation",
+        "Telemedicine",
+        "AI Diagnostics"
+      ],
+      "dateCreated": "2025-08-11",
+      "keywords": "GenHealth 7.0, Society 7.0, kesehatan digital, generasi muda Indonesia",
+      "inLanguage": "id-ID"
+    }
+    </script>
+    
+    <!-- Critical CSS Inlined for Competition Performance -->
+    <style>
+        /* Critical above-the-fold CSS */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #ab6b7f 0%, #fed6e3 100%);
+            --text-light: rgba(255, 255, 255, 0.9);
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --primary-blue: linear-gradient(135deg, #667eea 0%, #dbc0f6 100%);
+            --secondary-green: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --accent-purple: linear-gradient(135deg, #a8edea 0%, #ab6b7f 100%);
+            --health-gradient: linear-gradient(135deg, #667eea 0%, #fed6e3 50%, #f093fb 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: var(--primary-gradient);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .main-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 900;
+            color: var(--text-light);
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .loading-content {
+            text-align: center;
+            color: white;
+        }
+        
+        .loading-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Loading Screen for Competition Polish -->
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+        <div class="loading-content">
+            <img src="logo.png" alt="GenHealth 7.0 Logo" class="loading-logo">
+            <h2 class="loading-title">GenHealth 7.0</h2>
+            <p class="loading-subtitle">Memuat Inovasi Kesehatan Digital...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+   
     <!-- Animated Background -->
-    <div class="animated-bg">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
+    <div class="animated-bg" aria-hidden="true" role="presentation">
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
+        <div class="particle" aria-hidden="true"></div>
     </div>
 
-    <!-- Header Section -->
-    <header class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <div class="theme-badge"><img src="logo.png" alt="Logo " width="15px"> Pekan Ilmiah Remaja 2025 - Society 7.0 Era</div>
-                <h1 class="main-title">
-                    <span class="title-line">GenHealth 7.0:</span>
-                    <span class="title-line gradient-text">Generasi Digital, Solusi Sehat Global</span>
-                </h1>
-                <h2 class="subtitle">One Generation, One Global Health</h2>
-                <div class="hero-visual">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1754918895/pplx_project_search_images/64ad560c6807fe4830838e01fe28bd282b82f2b1.png" alt="Global Digital Health Network" class="hero-image">
-                    <div class="floating-icons">
-                        <div class="health-icon" data-icon="🏥">🏥</div>
-                        <div class="health-icon" data-icon="💊">💊</div>
-                        <div class="health-icon" data-icon="❤️">❤️</div>
-                        <div class="health-icon" data-icon="🧬">🧬</div>
-                        <div class="health-icon" data-icon="📱">📱</div>
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <header class="hero-section" role="banner">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Competition Badge with Logo -->
+                    <div class="theme-badge" role="img" aria-label="Logo Pekan Ilmiah Remaja 2025">
+                        <img src="logo.png" alt="Logo PIR 2025" width="20" height="20" class="badge-logo">
+                        <span class="badge-text">Pekan Ilmiah Remaja 2025 - Society 7.0 Era</span>
+                        <div class="badge-glow" aria-hidden="true"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Statistics Section -->
-    <section class="stats-section">
-        <div class="container">
-            <h3 class="section-title">Transformasi Digital Kesehatan Indonesia</h3>
-            <div class="stats-grid">
-                <div class="stat-card" data-target="69" data-suffix="%">
-                    <div class="stat-number">0<span class="suffix">%</span></div>
-                    <div class="stat-label">Anak Muda Indonesia Menggunakan Telehealth</div>
-                    <div class="stat-description">Generasi digital Indonesia memanfaatkan teknologi telehealth untuk akses kesehatan yang lebih mudah</div>
-                </div>
-                <div class="stat-card" data-target="6" data-suffix="/10">
-                    <div class="stat-number">0<span class="suffix">/10</span></div>
-                    <div class="stat-label">Anak Muda Menggunakan Smartwatch Kesehatan</div>
-                    <div class="stat-description">Perangkat wearable menjadi bagian integral dari gaya hidup sehat generasi muda</div>
-                </div>
-                <div class="stat-card" data-target="57" data-suffix="%">
-                    <div class="stat-number">0<span class="suffix">%</span></div>
-                    <div class="stat-label">Warga Indonesia Menggunakan Aplikasi Kesehatan</div>
-                    <div class="stat-description">Indonesia peringkat 3 dunia dalam pemanfaatan aplikasi kesehatan digital</div>
-                </div>
-                <div class="stat-card" data-target="20" data-suffix="juta">
-                    <div class="stat-number">0<span class="suffix"> juta</span></div>
-                    <div class="stat-label">Pengguna Telemedicine di Indonesia (2020)</div>
-                    <div class="stat-description">Lonjakan luar biasa dari 2 juta pengguna di 2019 menjadi 20 juta di 2020</div>
-                </div>
-                <div class="stat-card" data-target="73" data-suffix="%">
-                    <div class="stat-number">0<span class="suffix">%</span></div>
-                    <div class="stat-label">Generasi Muda Peduli Kesehatan Mental</div>
-                    <div class="stat-description">Kesadaran tinggi akan pentingnya kesehatan mental di era digital</div>
-                </div>
-                <div class="stat-card" data-target="250" data-suffix="+">
-                    <div class="stat-number">0<span class="suffix">+</span></div>
-                    <div class="stat-label">Aplikasi Kesehatan Diluncurkan Per Hari Global</div>
-                    <div class="stat-description">Inovasi kesehatan digital berkembang pesat di seluruh dunia</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Innovation Showcase -->
-    <section class="innovation-section">
-        <div class="container">
-            <h3 class="section-title">Inovasi Kesehatan Digital</h3>
-            <div class="innovation-grid">
-                <div class="innovation-card" data-innovation="ai-diagnostics">
-                    <div class="innovation-icon">🤖</div>
-                    <h4>AI-Powered Health Diagnostics</h4>
-                    <p>Kecerdasan buatan membantu diagnosis dini penyakit dengan akurasi tinggi</p>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h5>Impact:</h5>
-                            <p>Meningkatkan akurasi diagnosis hingga 95% dan mempercepat deteksi dini penyakit</p>
+                    
+                    <!-- Main Title with Enhanced Semantics -->
+                    <h1 class="main-title" itemscope itemtype="http://schema.org/CreativeWork">
+                        <span class="title-line" itemprop="name">GenHealth 7.0:</span>
+                        <span class="title-line gradient-text" itemprop="alternateName">Generasi Digital, Solusi Sehat Global</span>
+                    </h1>
+                    
+                    <!-- Subtitle with Language Mixing -->
+                    <h2 class="subtitle" lang="en">
+                        <span class="subtitle-main">One Generation, One Global Health</span>
+                        <span class="subtitle-accent" aria-hidden="true">●</span>
+                        <span class="subtitle-translation" lang="id">Satu Generasi, Satu Kesehatan Global</span>
+                    </h2>
+                    
+                    <!-- Enhanced Hero Visual -->
+                    <div class="hero-visual" role="img" aria-labelledby="hero-visual-desc">
+                        <div class="hero-image-container">
+                            <img src="image.png" 
+                                 alt="Jaringan Kesehatan Digital Global" 
+                                 class="hero-image"
+                                 loading="eager"
+                                 decoding="async"
+                                 width="800"
+                                 height="600">
+                            <div class="hero-image-overlay" aria-hidden="true"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="innovation-card" data-innovation="telemedicine">
-                    <div class="innovation-icon">📱</div>
-                    <h4>Telemedicine Revolution</h4>
-                    <p>Konsultasi dokter jarak jauh memungkinkan akses kesehatan merata di seluruh Indonesia</p>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h5>Impact:</h5>
-                            <p>Menjangkau 17.000+ pulau Indonesia dengan layanan kesehatan berkualitas</p>
+                        
+                        <!-- Enhanced Floating Health Icons -->
+                        <div class="floating-icons" aria-hidden="true" role="presentation">
+                            <div class="health-icon hospital-icon" data-tooltip="Rumah Sakit Digital">
+                                <span class="icon-emoji">🏥</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="health-icon medicine-icon" data-tooltip="Obat Pintar">
+                                <span class="icon-emoji">💊</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="health-icon heart-icon" data-tooltip="Monitoring Jantung">
+                                <span class="icon-emoji">❤️</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="health-icon dna-icon" data-tooltip="Genomik Kesehatan">
+                                <span class="icon-emoji">🧬</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="health-icon mobile-icon" data-tooltip="Kesehatan Mobile">
+                                <span class="icon-emoji">📱</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="health-icon brain-icon" data-tooltip="AI Kesehatan">
+                                <span class="icon-emoji">🧠</span>
+                                <div class="icon-pulse"></div>
+                            </div>
                         </div>
+                        
                     </div>
-                </div>
-                <div class="innovation-card" data-innovation="wearable-tech">
-                    <div class="innovation-icon">⌚</div>
-                    <h4>Wearable Health Technology</h4>
-                    <p>Smartwatch dan perangkat wearable memantau kesehatan 24/7</p>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h5>Impact:</h5>
-                            <p>Pemantauan kesehatan preventif untuk mencegah penyakit sebelum terjadi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="innovation-card" data-innovation="mental-health">
-                    <div class="innovation-icon">🧠</div>
-                    <h4>Mental Health Support Apps</h4>
-                    <p>Aplikasi kesehatan mental menyediakan dukungan psikologis yang mudah diakses</p>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h5>Impact:</h5>
-                            <p>Mengurangi stigma kesehatan mental dan meningkatkan aksesibilitas layanan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="innovation-card" data-innovation="global-networks">
-                    <div class="innovation-icon">🌐</div>
-                    <h4>Global Health Networks</h4>
-                    <p>Jaringan kesehatan global menghubungkan data dan expertise internasional</p>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h5>Impact:</h5>
-                            <p>Kolaborasi global untuk mengatasi tantangan kesehatan bersama</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="innovation-card" data-innovation="precision-medicine">
-                    <div class="innovation-icon">🧬</div>
-                    <h4>Precision Medicine</h4>
-                    <p>Pengobatan personal berdasarkan profil genetik dan data individual</p>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h5>Impact:</h5>
-                            <p>Efektivitas pengobatan meningkat 2-3x dengan efek samping minimal</p>
+                    
+                    <!-- Competition Highlight Section -->
+                    <div class="competition-highlight" role="complementary">
+                        <div class="highlight-badge">
+                            <span class="highlight-icon">🏆</span>
+                            <span class="highlight-text">Poster Terdepan dalam Inovasi Kesehatan Digital</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Society Evolution Timeline -->
-    <section class="timeline-section">
-        <div class="container">
-            <h3 class="section-title">Evolusi Menuju Society 7.0</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">1.0</div>
-                    <div class="timeline-content">
-                        <h4>Society 1.0</h4>
-                        <p>Berburu & Mengumpulkan</p>
-                        <span>Alat Sederhana</span>
-                    </div>
+        <!-- Statistics Section with Enhanced Accessibility -->
+        <section class="stats-section" aria-labelledby="stats-title" role="region">
+            <div class="container">
+                <h3 id="stats-title" class="section-title">
+                    <span class="title-main">Transformasi Digital Kesehatan Indonesia</span>
+                    <span class="title-subtitle">Data & Statistik Terkini 2025</span>
+                </h3>
+                
+                <!-- Statistics Grid with ARIA -->
+                <div class="stats-grid" role="list" aria-label="Statistik kesehatan digital Indonesia">
+                    <article class="stat-card" role="listitem" data-target="69" data-suffix="%" tabindex="0">
+                        <div class="stat-icon" aria-hidden="true">📊</div>
+                        <div class="stat-number" aria-live="polite">0<span class="suffix">%</span></div>
+                        <h4 class="stat-label">Anak Muda Indonesia Menggunakan Telehealth</h4>
+                        <p class="stat-description">Generasi digital Indonesia memanfaatkan teknologi telehealth untuk akses kesehatan yang lebih mudah dan efisien</p>
+                        <div class="stat-source">Sumber: Kemenkes RI 2025</div>
+                    </article>
+                    
+                    <article class="stat-card" role="listitem" data-target="6" data-suffix="/10" tabindex="0">
+                        <div class="stat-icon" aria-hidden="true">⌚</div>
+                        <div class="stat-number" aria-live="polite">0<span class="suffix">/10</span></div>
+                        <h4 class="stat-label">Anak Muda Menggunakan Smartwatch Kesehatan</h4>
+                        <p class="stat-description">Perangkat wearable menjadi bagian integral dari gaya hidup sehat generasi muda Indonesia</p>
+                        <div class="stat-source">Sumber: IDC Indonesia 2025</div>
+                    </article>
+                    
+                    <article class="stat-card" role="listitem" data-target="57" data-suffix="%" tabindex="0">
+                        <div class="stat-icon" aria-hidden="true">📱</div>
+                        <div class="stat-number" aria-live="polite">0<span class="suffix">%</span></div>
+                        <h4 class="stat-label">Warga Indonesia Menggunakan Aplikasi Kesehatan</h4>
+                        <p class="stat-description">Indonesia peringkat 3 dunia dalam pemanfaatan aplikasi kesehatan digital</p>
+                        <div class="stat-source">Sumber: WHO Global Health Observatory 2025</div>
+                    </article>
+                    
+                    <article class="stat-card" role="listitem" data-target="20" data-suffix="juta" tabindex="0">
+                        <div class="stat-icon" aria-hidden="true">🌐</div>
+                        <div class="stat-number" aria-live="polite">0<span class="suffix"> juta</span></div>
+                        <h4 class="stat-label">Pengguna Telemedicine di Indonesia</h4>
+                        <p class="stat-description">Lonjakan luar biasa dari 2 juta pengguna di 2019 menjadi 20 juta di 2025</p>
+                        <div class="stat-source">Sumber: APJII & Telemedicine Indonesia 2025</div>
+                    </article>
+                    
+                    <article class="stat-card" role="listitem" data-target="73" data-suffix="%" tabindex="0">
+                        <div class="stat-icon" aria-hidden="true">🧠</div>
+                        <div class="stat-number" aria-live="polite">0<span class="suffix">%</span></div>
+                        <h4 class="stat-label">Generasi Muda Peduli Kesehatan Mental</h4>
+                        <p class="stat-description">Kesadaran tinggi akan pentingnya kesehatan mental di era digital Society 7.0</p>
+                        <div class="stat-source">Sumber: Mental Health Indonesia Survey 2025</div>
+                    </article>
+                    
+                    <article class="stat-card" role="listitem" data-target="250" data-suffix="+" tabindex="0">
+                        <div class="stat-icon" aria-hidden="true">🚀</div>
+                        <div class="stat-number" aria-live="polite">0<span class="suffix">+</span></div>
+                        <h4 class="stat-label">Aplikasi Kesehatan Diluncurkan Per Hari Global</h4>
+                        <p class="stat-description">Inovasi kesehatan digital berkembang pesat di seluruh dunia menuju Society 7.0</p>
+                        <div class="stat-source">Sumber: Global HealthTech Report 2025</div>
+                    </article>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">2.0</div>
-                    <div class="timeline-content">
-                        <h4>Society 2.0</h4>
-                        <p>Pertanian</p>
-                        <span>Irigasi & Alat Pertanian</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">3.0</div>
-                    <div class="timeline-content">
-                        <h4>Society 3.0</h4>
-                        <p>Industri</p>
-                        <span>Mesin & Manufaktur</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">4.0</div>
-                    <div class="timeline-content">
-                        <h4>Society 4.0</h4>
-                        <p>Informasi</p>
-                        <span>Internet & Komputer</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">5.0</div>
-                    <div class="timeline-content">
-                        <h4>Society 5.0</h4>
-                        <p>Super Smart Society</p>
-                        <span>AI, IoT, Big Data</span>
-                    </div>
-                </div>
-                <div class="timeline-item active">
-                    <div class="timeline-marker">7.0</div>
-                    <div class="timeline-content">
-                        <h4>Society 7.0</h4>
-                        <p>Human-Centric Tech</p>
-                        <span>Quantum, Neurotech, BioAI</span>
+                
+                <!-- Statistics Summary for Competition Impact -->
+                <div class="stats-summary" role="complementary">
+                    <div class="summary-content">
+                        <h4 class="summary-title">Dampak Transformasi</h4>
+                        <p class="summary-text">Data menunjukkan Indonesia menjadi leader regional dalam adopsi teknologi kesehatan digital oleh generasi muda</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Medical Technology Showcase -->
-    <section class="tech-showcase">
-        <div class="container">
-            <h3 class="section-title">Teknologi Kesehatan Digital</h3>
-            <div class="tech-images">
-                <div class="tech-image-card">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1754710882/pplx_project_search_images/4bc46f25a8a59a35ac35c3eb04f50be3344b6cce.png" alt="AI Medical Diagnosis">
-                    <div class="tech-overlay">
-                        <h4>AI-Powered Diagnosis</h4>
-                        <p>Advanced AI analyzes medical data for faster, more accurate diagnosis</p>
-                    </div>
+        <!-- Innovation Showcase with Enhanced Structure -->
+        <section class="innovation-section" aria-labelledby="innovation-title" role="region">
+            <div class="container">
+                <h3 id="innovation-title" class="section-title">
+                    <span class="title-main">Inovasi Kesehatan Digital</span>
+                    <span class="title-subtitle">6 Pilar Utama GenHealth 7.0</span>
+                </h3>
+                
+                <div class="innovation-grid" role="list" aria-label="Daftar inovasi kesehatan digital">
+                    <!-- AI Diagnostics -->
+                    <article class="innovation-card" role="listitem" data-innovation="ai-diagnostics" tabindex="0" 
+                             aria-labelledby="ai-diagnostics-title" aria-describedby="ai-diagnostics-desc">
+                        <div class="innovation-header">
+                            <div class="innovation-icon" aria-hidden="true">🤖</div>
+                            <div class="innovation-badge">AI</div>
+                        </div>
+                        <h4 id="ai-diagnostics-title" class="innovation-title">AI-Powered Health Diagnostics</h4>
+                        <p id="ai-diagnostics-desc" class="innovation-description">
+                            Kecerdasan buatan membantu diagnosis dini penyakit dengan akurasi tinggi dan analisis prediktif
+                        </p>
+                        <div class="innovation-metrics">
+                            <span class="metric">95% Akurasi</span>
+                            <span class="metric">10x Lebih Cepat</span>
+                        </div>
+                        <div class="card-overlay" aria-hidden="true">
+                            <div class="overlay-content">
+                                <h5>Dampak Transformatif:</h5>
+                                <p>Meningkatkan akurasi diagnosis hingga 95% dan mempercepat deteksi dini penyakit dari jam menjadi menit</p>
+                                <div class="overlay-stats">
+                                    <div class="overlay-stat">
+                                        <span class="stat-value">2.5M+</span>
+                                        <span class="stat-label">Diagnosis per hari</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Telemedicine -->
+                    <article class="innovation-card" role="listitem" data-innovation="telemedicine" tabindex="0"
+                             aria-labelledby="telemedicine-title" aria-describedby="telemedicine-desc">
+                        <div class="innovation-header">
+                            <div class="innovation-icon" aria-hidden="true">📱</div>
+                            <div class="innovation-badge">TELEHEALTH</div>
+                        </div>
+                        <h4 id="telemedicine-title" class="innovation-title">Telemedicine Revolution</h4>
+                        <p id="telemedicine-desc" class="innovation-description">
+                            Konsultasi dokter jarak jauh memungkinkan akses kesehatan merata di seluruh Indonesia
+                        </p>
+                        <div class="innovation-metrics">
+                            <span class="metric">17.000+ Pulau</span>
+                            <span class="metric">24/7 Layanan</span>
+                        </div>
+                        <div class="card-overlay" aria-hidden="true">
+                            <div class="overlay-content">
+                                <h5>Dampak Transformatif:</h5>
+                                <p>Menjangkau 17.000+ pulau Indonesia dengan layanan kesehatan berkualitas tinggi</p>
+                                <div class="overlay-stats">
+                                    <div class="overlay-stat">
+                                        <span class="stat-value">85%</span>
+                                        <span class="stat-label">Kepuasan pasien</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Wearable Technology -->
+                    <article class="innovation-card" role="listitem" data-innovation="wearable-tech" tabindex="0"
+                             aria-labelledby="wearable-title" aria-describedby="wearable-desc">
+                        <div class="innovation-header">
+                            <div class="innovation-icon" aria-hidden="true">⌚</div>
+                            <div class="innovation-badge">WEARABLE</div>
+                        </div>
+                        <h4 id="wearable-title" class="innovation-title">Wearable Health Technology</h4>
+                        <p id="wearable-desc" class="innovation-description">
+                            Smartwatch dan perangkat wearable memantau kesehatan 24/7 dengan teknologi sensor canggih
+                        </p>
+                        <div class="innovation-metrics">
+                            <span class="metric">24/7 Monitoring</span>
+                            <span class="metric">Real-time Alert</span>
+                        </div>
+                        <div class="card-overlay" aria-hidden="true">
+                            <div class="overlay-content">
+                                <h5>Dampak Transformatif:</h5>
+                                <p>Pemantauan kesehatan preventif untuk mencegah penyakit sebelum terjadi</p>
+                                <div class="overlay-stats">
+                                    <div class="overlay-stat">
+                                        <span class="stat-value">40%</span>
+                                        <span class="stat-label">Pengurangan risiko</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Mental Health Apps -->
+                    <article class="innovation-card" role="listitem" data-innovation="mental-health" tabindex="0"
+                             aria-labelledby="mental-health-title" aria-describedby="mental-health-desc">
+                        <div class="innovation-header">
+                            <div class="innovation-icon" aria-hidden="true">🧠</div>
+                            <div class="innovation-badge">MENTAL</div>
+                        </div>
+                        <h4 id="mental-health-title" class="innovation-title">Mental Health Support Apps</h4>
+                        <p id="mental-health-desc" class="innovation-description">
+                            Aplikasi kesehatan mental menyediakan dukungan psikologis yang mudah diakses dan bebas stigma
+                        </p>
+                        <div class="innovation-metrics">
+                            <span class="metric">Stigma-Free</span>
+                            <span class="metric">AI Counselor</span>
+                        </div>
+                        <div class="card-overlay" aria-hidden="true">
+                            <div class="overlay-content">
+                                <h5>Dampak Transformatif:</h5>
+                                <p>Mengurangi stigma kesehatan mental dan meningkatkan aksesibilitas layanan psikologis</p>
+                                <div class="overlay-stats">
+                                    <div class="overlay-stat">
+                                        <span class="stat-value">60%</span>
+                                        <span class="stat-label">Peningkatan well-being</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Global Health Networks -->
+                    <article class="innovation-card" role="listitem" data-innovation="global-networks" tabindex="0"
+                             aria-labelledby="global-networks-title" aria-describedby="global-networks-desc">
+                        <div class="innovation-header">
+                            <div class="innovation-icon" aria-hidden="true">🌐</div>
+                            <div class="innovation-badge">GLOBAL</div>
+                        </div>
+                        <h4 id="global-networks-title" class="innovation-title">Global Health Networks</h4>
+                        <p id="global-networks-desc" class="innovation-description">
+                            Jaringan kesehatan global menghubungkan data dan expertise internasional untuk kolaborasi
+                        </p>
+                        <div class="innovation-metrics">
+                            <span class="metric">195 Negara</span>
+                            <span class="metric">Data Sharing</span>
+                        </div>
+                        <div class="card-overlay" aria-hidden="true">
+                            <div class="overlay-content">
+                                <h5>Dampak Transformatif:</h5>
+                                <p>Kolaborasi global untuk mengatasi tantangan kesehatan bersama dengan data real-time</p>
+                                <div class="overlay-stats">
+                                    <div class="overlay-stat">
+                                        <span class="stat-value">3x</span>
+                                        <span class="stat-label">Kecepatan respons</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Precision Medicine -->
+                    <article class="innovation-card" role="listitem" data-innovation="precision-medicine" tabindex="0"
+                             aria-labelledby="precision-medicine-title" aria-describedby="precision-medicine-desc">
+                        <div class="innovation-header">
+                            <div class="innovation-icon" aria-hidden="true">🧬</div>
+                            <div class="innovation-badge">PRECISION</div>
+                        </div>
+                        <h4 id="precision-medicine-title" class="innovation-title">Precision Medicine</h4>
+                        <p id="precision-medicine-desc" class="innovation-description">
+                            Pengobatan personal berdasarkan profil genetik dan data individual untuk hasil optimal
+                        </p>
+                        <div class="innovation-metrics">
+                            <span class="metric">Personal DNA</span>
+                            <span class="metric">Custom Treatment</span>
+                        </div>
+                        <div class="card-overlay" aria-hidden="true">
+                            <div class="overlay-content">
+                                <h5>Dampak Transformatif:</h5>
+                                <p>Efektivitas pengobatan meningkat 2-3x dengan efek samping yang minimal</p>
+                                <div class="overlay-stats">
+                                    <div class="overlay-stat">
+                                        <span class="stat-value">90%</span>
+                                        <span class="stat-label">Success rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="tech-image-card">
-                    <img src="https://i0.wp.com/www.techdigest.tv/wp-content/uploads/2021/02/fitness-apps.jpeg?ssl=1" alt="Wearable Technology">
-                    <div class="tech-overlay">
-                        <h4>Wearable Health Tech</h4>
-                        <p>Real-time health monitoring through smartwatches and fitness trackers</p>
-                    </div>
+            </div>
+        </section>
+
+        <!-- Society Evolution Timeline with Enhanced Visuals -->
+        <section class="timeline-section" aria-labelledby="timeline-title" role="region">
+            <div class="container">
+                <h3 id="timeline-title" class="section-title">
+                    <span class="title-main">Evolusi Menuju Society 7.0</span>
+                    <span class="title-subtitle">Perjalanan Peradaban Manusia</span>
+                </h3>
+                
+                <div class="timeline" role="list" aria-label="Timeline evolusi society">
+                    <article class="timeline-item" role="listitem" tabindex="0" data-era="1.0">
+                        <div class="timeline-marker" aria-hidden="true">1.0</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Society 1.0</h4>
+                            <p class="timeline-period">Berburu & Mengumpulkan</p>
+                            <span class="timeline-tech">Alat Sederhana</span>
+                            <div class="timeline-health">Pengobatan Herbal Tradisional</div>
+                        </div>
+                        <div class="timeline-visual" aria-hidden="true">🏹</div>
+                    </article>
+
+                    <article class="timeline-item" role="listitem" tabindex="0" data-era="2.0">
+                        <div class="timeline-marker" aria-hidden="true">2.0</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Society 2.0</h4>
+                            <p class="timeline-period">Pertanian</p>
+                            <span class="timeline-tech">Irigasi & Alat Pertanian</span>
+                            <div class="timeline-health">Sistem Kesehatan Komunal</div>
+                        </div>
+                        <div class="timeline-visual" aria-hidden="true">🌾</div>
+                    </article>
+
+                    <article class="timeline-item" role="listitem" tabindex="0" data-era="3.0">
+                        <div class="timeline-marker" aria-hidden="true">3.0</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Society 3.0</h4>
+                            <p class="timeline-period">Industri</p>
+                            <span class="timeline-tech">Mesin & Manufaktur</span>
+                            <div class="timeline-health">Rumah Sakit Modern</div>
+                        </div>
+                        <div class="timeline-visual" aria-hidden="true">⚙️</div>
+                    </article>
+
+                    <article class="timeline-item" role="listitem" tabindex="0" data-era="4.0">
+                        <div class="timeline-marker" aria-hidden="true">4.0</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Society 4.0</h4>
+                            <p class="timeline-period">Informasi</p>
+                            <span class="timeline-tech">Internet & Komputer</span>
+                            <div class="timeline-health">Medical Records Digital</div>
+                        </div>
+                        <div class="timeline-visual" aria-hidden="true">💻</div>
+                    </article>
+
+                    <article class="timeline-item" role="listitem" tabindex="0" data-era="5.0">
+                        <div class="timeline-marker" aria-hidden="true">5.0</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Society 5.0</h4>
+                            <p class="timeline-period">Super Smart Society</p>
+                            <span class="timeline-tech">AI, IoT, Big Data</span>
+                            <div class="timeline-health">Telemedicine & Wearables</div>
+                        </div>
+                        <div class="timeline-visual" aria-hidden="true">🤖</div>
+                    </article>
+
+                    <article class="timeline-item active" role="listitem" tabindex="0" data-era="7.0"
+                             aria-label="Society 7.0 - Era saat ini">
+                        <div class="timeline-marker current" aria-hidden="true">7.0</div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Society 7.0</h4>
+                            <p class="timeline-period">Human-Centric Tech</p>
+                            <span class="timeline-tech">Quantum, Neurotech, BioAI</span>
+                            <div class="timeline-health">GenHealth: Kesehatan Predictive & Personal</div>
+                        </div>
+                        <div class="timeline-visual current" aria-hidden="true">🧬</div>
+                        <div class="timeline-highlight">
+                            <span class="highlight-label">ERA KITA</span>
+                        </div>
+                    </article>
                 </div>
-                <div class="tech-image-card">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1754710882/pplx_project_search_images/87ab2966d3a1af8b12a4ebb6cfbdf13ba680b237.png" alt="Holographic Medicine">
-                    <div class="tech-overlay">
-                        <h4>Holographic Medicine</h4>
-                        <p>3D visualization and interaction with medical data and anatomy</p>
+                
+                <!-- Timeline Progress Indicator -->
+                <div class="timeline-progress" aria-hidden="true">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-label">Kemajuan Peradaban Kesehatan</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Technology Showcase with Enhanced Images -->
+        <section class="tech-showcase" aria-labelledby="tech-title" role="region">
+            <div class="container">
+                <h3 id="tech-title" class="section-title">
+                    <span class="title-main">Teknologi Kesehatan Digital</span>
+                    <span class="title-subtitle">Showcase Visual Implementation</span>
+                </h3>
+                
+                <div class="tech-images" role="list" aria-label="Galeri teknologi kesehatan digital">
+                    <article class="tech-image-card" role="listitem" tabindex="0">
+                        <div class="tech-image-wrapper">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1754710882/pplx_project_search_images/4bc46f25a8a59a35ac35c3eb04f50be3344b6cce.png" 
+                                 alt="AI Medical Diagnosis dengan tampilan holografik untuk analisis medis" 
+                                 class="tech-image"
+                                 loading="lazy"
+                                 decoding="async">
+                            <div class="tech-badge">AI DIAGNOSTIC</div>
+                        </div>
+                        <div class="tech-overlay">
+                            <div class="overlay-header">
+                                <div class="overlay-icon">🤖</div>
+                                <h4 class="overlay-title">AI-Powered Diagnosis</h4>
+                            </div>
+                            <p class="overlay-description">
+                                Advanced AI analyzes medical data for faster, more accurate diagnosis dengan teknologi machine learning terdepan
+                            </p>
+                            <div class="overlay-metrics">
+                                <div class="metric-item">
+                                    <span class="metric-value">95%</span>
+                                    <span class="metric-label">Accuracy</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-value">&lt;30s</span>
+                                    <span class="metric-label">Processing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tech-image-card" role="listitem" tabindex="0">
+                        <div class="tech-image-wrapper">
+                            <img src="https://i0.wp.com/www.techdigest.tv/wp-content/uploads/2021/02/fitness-apps.jpeg?ssl=1" 
+                                 alt="Wearable Technology smartwatch dan fitness tracker untuk monitoring kesehatan" 
+                                 class="tech-image"
+                                 loading="lazy"
+                                 decoding="async">
+                            <div class="tech-badge">WEARABLE TECH</div>
+                        </div>
+                        <div class="tech-overlay">
+                            <div class="overlay-header">
+                                <div class="overlay-icon">⌚</div>
+                                <h4 class="overlay-title">Wearable Health Tech</h4>
+                            </div>
+                            <p class="overlay-description">
+                                Real-time health monitoring through smartwatches and fitness trackers dengan sensor biomedis canggih
+                            </p>
+                            <div class="overlay-metrics">
+                                <div class="metric-item">
+                                    <span class="metric-value">24/7</span>
+                                    <span class="metric-label">Monitoring</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-value">15+</span>
+                                    <span class="metric-label">Vital Signs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tech-image-card" role="listitem" tabindex="0">
+                        <div class="tech-image-wrapper">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1754710882/pplx_project_search_images/87ab2966d3a1af8b12a4ebb6cfbdf13ba680b237.png" 
+                                 alt="Holographic Medicine dengan visualisasi 3D untuk interaksi data medis" 
+                                 class="tech-image"
+                                 loading="lazy"
+                                 decoding="async">
+                            <div class="tech-badge">HOLOGRAPHIC</div>
+                        </div>
+                        <div class="tech-overlay">
+                            <div class="overlay-header">
+                                <div class="overlay-icon">🔮</div>
+                                <h4 class="overlay-title">Holographic Medicine</h4>
+                            </div>
+                            <p class="overlay-description">
+                                3D visualization and interaction with medical data and anatomy menggunakan teknologi hologram
+                            </p>
+                            <div class="overlay-metrics">
+                                <div class="metric-item">
+                                    <span class="metric-value">3D</span>
+                                    <span class="metric-label">Visualization</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-value">AR/VR</span>
+                                    <span class="metric-label">Interface</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action with Enhanced Design -->
+        <section class="cta-section" aria-labelledby="cta-title" role="region">
+            <div class="container">
+                <div class="cta-content">
+                    <h3 id="cta-title" class="cta-title">
+                        <span class="cta-main-title">Generasi Muda: Agen Perubahan Kesehatan Digital</span>
+                    </h3>
+                    <h4 class="cta-subtitle">
+                        <span lang="en">Together We Build Healthier Tomorrow</span>
+                        <span class="subtitle-divider">●</span>
+                        <span lang="id">Bersama Membangun Masa Depan Sehat</span>
+                    </h4>
+                    <p class="cta-description">
+                        Mari bersama-sama memanfaatkan teknologi terdepan untuk menciptakan masa depan kesehatan yang lebih baik, 
+                        merata, dan berkelanjutan bagi Indonesia dan dunia dalam era Society 7.0
+                    </p>
+                    
+                    <!-- Call to Action Buttons -->
+                    <div class="cta-buttons">
+                        <button class="cta-button primary" type="button">
+                            <span class="button-icon">🚀</span>
+                            <span class="button-text">Bergabung dengan Gerakan</span>
+                        </button>
+                        <button class="cta-button secondary" type="button">
+                            <span class="button-icon">📖</span>
+                            <span class="button-text">Pelajari Lebih Lanjut</span>
+                        </button>
+                    </div><br><br>
+                    
+                    <div class="cta-visual">
+                        <div class="cta-image-wrapper">
+                            <img src="image.png" 
+                                 alt="Future Health Interface menampilkan dashboard kesehatan digital masa depan" 
+                                 class="cta-image"
+                                 loading="lazy"
+                                 decoding="async">
+                            <div class="cta-image-overlay" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Competition Footer -->
+                    <div class="competition-footer" role="contentinfo">
+                        <div class="footer-badge">
+                            <img src="logo.png" alt="Logo PIR 2025" class="footer-logo" width="24" height="24">
+                            <span class="footer-text">Pekan Ilmiah Remaja 2025 - Kategori Poster Ilmiah</span>
+                        </div>
+                        <div class="footer-subtitle">GenHealth 7.0: Visi Kesehatan Digital Indonesia 2030</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h3 class="cta-title">Generasi Muda: Agen Perubahan Kesehatan Digital</h3>
-                <h4 class="cta-subtitle">Together We Build Healthier Tomorrow</h4>
-                <p class="cta-description">Mari bersama-sama memanfaatkan teknologi untuk menciptakan masa depan kesehatan yang lebih baik bagi Indonesia dan dunia</p>
-                <div class="cta-visual">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1754735992/pplx_project_search_images/3f378dc152f28367f9919591abe59e8e8f812919.png" alt="Future Health Interface" class="cta-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Innovation Modal -->
-    <div class="modal hidden" id="innovation-modal">
+    <!-- Enhanced Innovation Modal -->
+    <div class="modal hidden" id="innovation-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-backdrop" aria-hidden="true"></div>
         <div class="modal-content">
-            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <span class="modal-close" aria-label="Close modal" role="button" tabindex="0">&times;</span>
+            </div>
             <div class="modal-body">
-                <div class="modal-icon"></div>
-                <h3 class="modal-title"></h3>
+                <div class="modal-icon" aria-hidden="true"></div>
+                <h3 id="modal-title" class="modal-title"></h3>
                 <p class="modal-description"></p>
                 <div class="modal-impact">
-                    <h4>Impact:</h4>
+                    <h4>Dampak Transformatif:</h4>
                     <p class="modal-impact-text"></p>
+                </div>
+                <div class="modal-stats">
+                    <div class="modal-stat">
+                        <span class="stat-number" id="modal-stat-1">-</span>
+                        <span class="stat-label" id="modal-stat-1-label">-</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Accessibility: Screen Reader Only Content -->
+    <div class="sr-only" id="live-region" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Scripts with Optimization -->
+    <script>
+        // Critical inline script for loading optimization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Remove loading screen after content loads
+            const loadingScreen = document.getElementById('loadingScreen');
+            const loadingProgress = loadingScreen.querySelector('.loading-progress');
+            
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        loadingScreen.style.opacity = '0';
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                        }, 500);
+                    }, 500);
+                }
+                loadingProgress.style.width = progress + '%';
+            }, 100);
+        });
+        
+        // Performance optimization: Intersection Observer for lazy loading
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        img.classList.remove('lazy');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+    
+    <!-- Main Application Script -->
+    <script src="app.js" async></script>
+    
+    <!-- Service Worker Registration for PWA (Competition Edge) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
