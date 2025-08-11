@@ -408,17 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
     transition: opacity 0.5s ease;
   `;
   
-  const loadingText = document.createElement('div');
-  loadingText.textContent = 'GenHealth 7.0 Loading...';
-  loadingText.style.cssText = `
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-    animation: pulseGlow 1.5s ease-in-out infinite alternate;
-  `;
   
-  loadingScreen.appendChild(loadingText);
-  document.body.appendChild(loadingScreen);
   
   // Hide loading screen after content loads
   window.addEventListener('load', () => {

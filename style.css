@@ -1,10 +1,13 @@
 /* ========== MODERN CSS VARIABLES ========== */
 :root {
   /* Primary Colors - Health-focused palette */
-  --primary-blue: linear-gradient(135deg, #667eea 0%, #dbc0f6 100%);
-  --secondary-green: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --primary-gradient: linear-gradient(135deg, #ab6b7f 0%, #fed6e3 100%);
+  --text-light: rgba(255, 255, 255, 0.9);
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --primary-blue: linear-gradient(135deg, #ea66a6 0%, #dbc0f6 100%);
+  --secondary-green: linear-gradient(135deg, #fe4fcc 0%, #00f2fe 100%);
   --accent-purple: linear-gradient(135deg, #a8edea 0%, #ab6b7f 100%);
-  --health-gradient: linear-gradient(135deg, #667eea 0%, #fed6e3 50%, #f093fb 100%);
+  --health-gradient: linear-gradient(135deg, #d866ea 0%, #fd4b9e 50%, #f093fb 100%);
   
   /* Glassmorphism colors */
   --glass-bg: rgba(255, 255, 255, 0.25);
@@ -616,7 +619,7 @@ body {
 /* ========== CTA SECTION ========== */
 .cta-section {
   padding: 8rem 0;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+  background: linear-gradient(135deg, rgb(239, 115, 160) 0%, rgba(193, 167, 218, 0.9) 100%);
   text-align: center;
   position: relative;
   overflow: hidden;
